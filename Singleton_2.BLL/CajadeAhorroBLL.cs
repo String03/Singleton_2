@@ -21,7 +21,7 @@ namespace Singleton_2.BLL
 
         public void Baja(CajadeAhorro cajadeAhorro)
         {
-            throw new NotImplementedException();
+            cajadeAhorrosLista.Remove(cajadeAhorro);
         }
 
         public IEnumerable<CajadeAhorro> ListarCajadeAhorro()

@@ -96,6 +96,7 @@
             this.btn_baja_caja_de_ahorro_en_dolares.TabIndex = 11;
             this.btn_baja_caja_de_ahorro_en_dolares.Text = "Baja";
             this.btn_baja_caja_de_ahorro_en_dolares.UseVisualStyleBackColor = true;
+            this.btn_baja_caja_de_ahorro_en_dolares.Click += new System.EventHandler(this.btn_baja_caja_de_ahorro_en_dolares_Click);
             // 
             // btn_alta_caja_de_ahorro_en_dolares
             // 

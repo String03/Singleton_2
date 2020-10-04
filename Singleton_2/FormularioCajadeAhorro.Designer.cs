@@ -70,6 +70,7 @@
             this.btn_baja_caja_de_ahorro.TabIndex = 2;
             this.btn_baja_caja_de_ahorro.Text = "Baja";
             this.btn_baja_caja_de_ahorro.UseVisualStyleBackColor = true;
+            this.btn_baja_caja_de_ahorro.Click += new System.EventHandler(this.btn_baja_caja_de_ahorro_Click);
             // 
             // txt_codigo_caja_de_ahorro
             // 

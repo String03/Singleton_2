@@ -56,5 +56,19 @@ namespace Singleton_2
             txt_nombre_caja_de_ahorro.Text = string.Empty;
             txt_monto_caja_de_ahorro.Text = string.Empty;
         }
+
+        private CajadeAhorro SeleccionarCajadeAhorro()
+        {
+            CajadeAhorro cajadeAhorro = grillaCajadeAhorro.SelectedRows[0].DataBoundItem as CajadeAhorro;
+            return cajadeAhorro;
+        }
+
+        private void btn_baja_caja_de_ahorro_Click(object sender, EventArgs e)
+        {
+            var cajadeAhorro = SeleccionarCajadeAhorro();
+            cajadeAhorroBLL.Baja(cajadeAhorro);
+            RefrescarGrillaCajadeAhorro();
+            LimpiarCampos();
+        }
     }
 }

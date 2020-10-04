@@ -56,5 +56,18 @@ namespace Singleton_2
         {
 
         }
+
+        private CajadeAhorroenDolares SeleccionarCajadeAhorroenDolares()
+        {
+            return (CajadeAhorroenDolares)grillaCajadeAhorroenDolares.SelectedRows[0].DataBoundItem;
+        }
+
+        private void btn_baja_caja_de_ahorro_en_dolares_Click(object sender, EventArgs e)
+        {
+            var cajadeAhorroenDolares = SeleccionarCajadeAhorroenDolares();
+            cajadeAhorroenDolaresBLL.Baja(cajadeAhorroenDolares);
+            RefrescarGrillaCajadeAhorroenDolares();
+            LimpiarCampos();
+        }
     }
 }
