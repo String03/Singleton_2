@@ -52,8 +52,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormularioCajadeAhorro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioCajadeAhorro.Designer.cs">
+      <DependentUpon>FormularioCajadeAhorro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormularioCajadeAhorroenDolares.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormularioCajadeAhorroenDolares.Designer.cs">
+      <DependentUpon>FormularioCajadeAhorroenDolares.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioCajadeAhorro.resx">
+      <DependentUpon>FormularioCajadeAhorro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormularioCajadeAhorroenDolares.resx">
+      <DependentUpon>FormularioCajadeAhorroenDolares.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +96,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Singleton_2.BLL\Singleton_2.BLL.csproj">
+      <Project>{4739482A-59DA-4300-B204-49530819880E}</Project>
+      <Name>Singleton_2.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Singleton_2.EE\Singleton_2.EE.csproj">
+      <Project>{85CF0688-6DC2-445B-9908-8B96DF708D99}</Project>
+      <Name>Singleton_2.EE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Singleton_2.Singleton\Singleton_2.Singleton.csproj">
+      <Project>{B1A04E67-AE0E-49E4-ADEC-6587FD98F529}</Project>
+      <Name>Singleton_2.Singleton</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

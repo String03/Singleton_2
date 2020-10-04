@@ -16,5 +16,17 @@ namespace Singleton_2
         {
             InitializeComponent();
         }
+
+        private void btn_caja_de_ahorro_Click(object sender, EventArgs e)
+        {
+            FormularioCajadeAhorro formularioCajadeAhorro = new FormularioCajadeAhorro();
+            formularioCajadeAhorro.Show();
+        }
+
+        private void btn_caja_de_ahorro_en_dolares_Click(object sender, EventArgs e)
+        {
+            FormularioCajadeAhorroenDolares formularioCajadeAhorroenDolares = new FormularioCajadeAhorroenDolares();
+            formularioCajadeAhorroenDolares.Show();
+        }
     }
 }
